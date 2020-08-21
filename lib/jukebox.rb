@@ -6,6 +6,7 @@ def run(song)
   elsif choice == "list"
     list(song)
   elsif choice == "play"
+    song = list(song)
     play(song)
   elsif choice == "exit"
     exit
