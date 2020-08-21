@@ -39,13 +39,11 @@ def play(song)
       result = "playing #{v}"
     end
   }
-  binding.pry
   if result = ""
     puts "Invalid input, please try again"
   else
-    puts result
+    puts "#{result}"
   end
-  binding.pry
 end
 
 def exit_jukebox
