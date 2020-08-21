@@ -17,3 +17,6 @@ def list(song)
 end
 
 def play
+  puts "Please enter a song name or number:"
+  name = gets.strip
+end
