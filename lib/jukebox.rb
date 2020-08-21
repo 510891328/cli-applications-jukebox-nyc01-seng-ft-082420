@@ -38,9 +38,10 @@ def play(song)
     if name == v || name == (i+1).to_s
       result = "playing #{v}"
     else
-      result = ""
+      result = "Invalid input, please try again"
     end
   }
+  puts result
 end
 
 def exit_jukebox
