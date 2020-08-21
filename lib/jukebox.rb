@@ -1,3 +1,4 @@
+require "pry"
 def run(song)
   puts "Please enter a command:"
   choice = gets.chomp
