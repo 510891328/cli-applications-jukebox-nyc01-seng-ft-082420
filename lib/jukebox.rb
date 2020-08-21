@@ -37,13 +37,10 @@ def play(song)
   song.each_with_index { |v, i|
     if name == v || name == (i+1).to_s
       result = "playing #{v}"
+    else
+      result = ""
     end
   }
-  if result = ""
-    puts "Invalid input, please try again"
-  else
-    puts result
-  end
 end
 
 def exit_jukebox
