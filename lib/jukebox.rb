@@ -36,12 +36,13 @@ def play(song)
   name = gets.strip
     song.each_with_index { |v, i|
       if name == v || name == (i+1).to_s
-        puts "playing #{v}"
         result = "playing #{v}"
       end
     }
   if result = ""
     puts "Invalid input, please try again"
+  else
+    puts result
   end
 end
 
