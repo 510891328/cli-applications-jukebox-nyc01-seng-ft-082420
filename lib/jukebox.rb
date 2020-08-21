@@ -31,13 +31,17 @@ def list(song)
 end
 
 def play(song)
+  result = ""
   puts "Please enter a song name or number:"
   name = gets.strip
     song.each_with_index { |v, i|
       if name == v || name == (i+1).to_s
         puts "playing #{v}"
+        result = "playing #{v}"
       end
     }
+  if result = ""
+    puts
 end
 
 def exit_jukebox
