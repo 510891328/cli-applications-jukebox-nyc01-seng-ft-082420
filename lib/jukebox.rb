@@ -19,9 +19,9 @@ end
 def play(song)
   puts "Please enter a song name or number:"
   name = gets.strip
-  if name.class =
-  song { |v, i|
-    if name == v || name == i+1
-      
-  }
+  if name.is_a?(String)
+    song { |v, i|
+      if name == v
+        
+    }
 end
