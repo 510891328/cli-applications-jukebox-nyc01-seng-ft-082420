@@ -26,7 +26,7 @@ end
 
 def list(song)
   song.each_with_index {|v, i|
-    puts "#{i}. #{v}"
+    puts "#{i+1}. #{v}"
   }
 end
 
