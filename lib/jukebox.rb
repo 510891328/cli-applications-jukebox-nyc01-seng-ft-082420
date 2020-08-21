@@ -34,7 +34,6 @@ def play(song)
   puts "Please enter a song name or number:"
   name = gets.strip
     song.each_with_index { |v, i|
-    binding.pry
       if name == v || name == i+1
         puts "playing #{v}"
       end
