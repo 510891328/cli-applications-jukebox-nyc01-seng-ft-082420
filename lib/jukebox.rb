@@ -34,7 +34,7 @@ def play(song)
   name = gets.strip
     song.each { |v, i|
     binding.pry
-      if name == v || (i+1).to_s
+      if name == v || name == i+1
         puts "playing #{v}"
       end
     }
