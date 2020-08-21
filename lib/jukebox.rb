@@ -44,6 +44,7 @@ def play(song)
   else
     puts result
   end
+  binding.pry
 end
 
 def exit_jukebox
