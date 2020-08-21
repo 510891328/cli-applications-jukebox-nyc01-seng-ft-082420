@@ -37,7 +37,6 @@ def play(song)
         puts "playing #{v}"
       end
     }
-  end
 end
 
 def exit_jukebox
