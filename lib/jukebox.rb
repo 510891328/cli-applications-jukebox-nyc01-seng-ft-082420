@@ -1,1 +1,7 @@
-puts "Please enter a command:"
+def run(song)
+  puts "Please enter a command:"
+end
+
+def help 
+  
+end
