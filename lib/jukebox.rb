@@ -32,7 +32,7 @@ end
 def play(song)
   puts "Please enter a song name or number:"
   name = gets.strip
-    song { |v, i|
+    song.each { |v, i|
       if name == v || (i+1).to_s
         puts "playing #{v}"
       end
