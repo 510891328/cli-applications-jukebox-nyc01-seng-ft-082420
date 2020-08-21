@@ -10,5 +10,10 @@ def help
         - exit : exits this program"
 end
 
-def list
-  
+def list(song)
+  song.each_with_index {|v|
+    puts v
+  }
+end
+
+def play
