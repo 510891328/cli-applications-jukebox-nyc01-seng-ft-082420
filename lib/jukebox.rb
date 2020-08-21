@@ -16,7 +16,12 @@ def list(song)
   }
 end
 
-def play
+def play(song)
   puts "Please enter a song name or number:"
   name = gets.strip
+  if 
+  song { |v, i|
+    if name == v || name == i+1
+      
+  }
 end
