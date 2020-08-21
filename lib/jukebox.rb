@@ -1,5 +1,17 @@
 def run(song)
   puts "Please enter a command:"
+  choice = gets.chomp
+  if choice == "help"
+    help
+  elsif choice == "list"
+    list(song)
+  elsif choice == "play"
+    play(song)
+  elsif choice == "exit"
+    exit
+  else
+    puts "Invalid command"
+  end
 end
 
 def help 
@@ -22,6 +34,21 @@ def play(song)
   if name.is_a?(String)
     song { |v, i|
       if name == v
-        
+        puts "playing #{v}"
+      end
     }
+  end
+
+  if name.is_a?(Numeric)
+    song { |v, i|
+      if name == i+1
+        puts "playing #{v}"
+      end
+    }
+  end
+  
+end
+
+def exit_jukebox
+  puts "Goodbye"
 end
