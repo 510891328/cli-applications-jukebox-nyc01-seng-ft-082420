@@ -38,8 +38,9 @@ def play(song)
     if name == v || name == (i+1).to_s
       result = "playing #{v}"
     end
-    binding.pry
   }
+  binding.pry
+  
   if result = ""
     puts "Invalid input, please try again"
   else
