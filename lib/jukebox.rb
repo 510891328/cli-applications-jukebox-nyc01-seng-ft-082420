@@ -3,5 +3,5 @@ def run(song)
 end
 
 def help 
-  
+  puts 
 end
