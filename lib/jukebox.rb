@@ -42,7 +42,7 @@ def play(song)
   if result = ""
     puts "Invalid input, please try again"
   else
-    puts "#{result}"
+    puts result
   end
 end
 
