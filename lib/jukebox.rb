@@ -32,22 +32,12 @@ end
 def play(song)
   puts "Please enter a song name or number:"
   name = gets.strip
-  if name.is_a?(String)
     song { |v, i|
-      if name == v
+      if name == v || name == i+1.string
         puts "playing #{v}"
       end
     }
   end
-
-  if name.is_a?(Numeric)
-    song { |v, i|
-      if name == i+1
-        puts "playing #{v}"
-      end
-    }
-  end
-  
 end
 
 def exit_jukebox
